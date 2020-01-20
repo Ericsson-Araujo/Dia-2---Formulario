@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7 dias 7 projetos</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <fieldset>
+        <legend>2 - Agendamento de Mesa</legend>
+        <form action="." method="post">
+            <div id="myFlexbox">
+                <div>                                        
+                    <input type="text" name="" id="nome" placeholder="Seu Nome" required />
+                </div>                                
+                <div>                    
+                    <input type="text" name="" id="cpf" placeholder="CPF: 888.888.888-88" required />
+                </div>
+                <div>                    
+                    <input type="email" name="email" id="" placeholder="Seu e-mail" required />
+                </div>
+                <div>                    
+                    <input type="text" name="horario" id="" placeholder="Horário: 00" required />
+                </div>                  
+                <div>
+                    <button type="submit" onclick="validar()"> Agendar </button>                   
+                </div>
+                <div>
+                    <progress id="pgb" value="0" max="100"></progress>                
+                </div>
+                <label id="resultado"></label>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+<script src="app.js"></script>
+</html>
